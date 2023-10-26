@@ -1,0 +1,23 @@
+<div class="search-results-container" *ngIf="!isFirstTime">
+    <div *ngIf="!isCompetitor && !isError && results.length > 0">
+        <p>{{currentTargetUrl}} was a search result at the following positions:</p>
+        <p>
+            <span *ngFor="let result of results; let isLast = last">{{result}}
+                <span *ngIf="!isLast">, </span>
+            </span>
+          </p>
+    </div>
+    <div *ngIf="isCompetitor && !isError && results.length > 0">
+      <div *ngIf="!isFirstCompTargetUrl">
+        <p>These are the following 10 or less competitors of {{currentTargetUrl}} up to the first rank of {{currentTargetUrl}}:</p>
+        <ol>
+            <li *ngFor="let result of results">
+              {{result}}
+            </li>
+        </ol>
+    </div>
+  </div>
+    <p *ngIf="!isError && results.length == 0">{{currentTargetUrl}} was not found as a top search result</p>
+    <p *ngIf="isCompetitor && !isError && isFirstCompTargetUrl">{{currentTargetUrl}} was the top result</p>
+    <p *ngIf="isError">{{results}}</p>
+</div>

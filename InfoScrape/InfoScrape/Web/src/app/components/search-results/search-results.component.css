@@ -1,0 +1,39 @@
+.search-results-container {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.search-results-container .label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.search-results-container span {
+  font-weight: 500;
+  color: #666;
+}
+
+h2 span {
+  font-size: 18px;
+}
+
+.isError {
+  color: red;
+  font-weight: bold;
+}
+
+.search-results-container h2:last-child {
+  margin-bottom: 0;
+}

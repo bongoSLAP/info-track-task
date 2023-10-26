@@ -1,0 +1,12 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}

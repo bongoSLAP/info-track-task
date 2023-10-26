@@ -1,0 +1,23 @@
+<div class="search-bar-container">
+    <input id="searchInput" class="search-bar" type="text" placeholder="Search" [(ngModel)]="searchInput"/>
+
+    <label for="targetUrlInput" class="input-label">Target URL</label>
+    <input id="targetUrlInput" class="target-url" type="text" placeholder="https://www.infotrack.co.uk" [(ngModel)]="targetUrlInput"
+        (input)="onInputChange($event)" (blur)="onBlurEvent()"/>
+
+    <div class="radio-buttons-container">
+        <label>
+            <input class="engine-radio" type="radio" name="choice" value="google" [(ngModel)]="selectedEngine" checked>
+            <span class="label">Google</span>
+        </label>
+        <label>
+            <input class="engine-radio" type="radio" name="choice" value="duckduckgo" [(ngModel)]="selectedEngine">
+            <span class="label">DuckDuckGo</span>
+        </label>
+    </div>
+
+    <div class="search-buttons-container">
+        <button class="search-button" (click)="searchRankings()">Search for Rankings</button>
+        <button class="search-button" (click)="searchCompetitors()">Search for Competitors</button>
+    </div>
+</div>
