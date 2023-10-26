@@ -32,7 +32,6 @@ export class SearchResultsComponent implements OnInit {
       else
         this.results = receivedResults.data;
       
-      console.log(this.results);
       this.currentTargetUrl = this.eventBus.getCurrentTargetUrl();
 
       if (this.isFirstTime) 
