@@ -3,10 +3,10 @@
 InfoTrack is a .NET + Angular SPA that scrapes Google and DuckDuckGo search results for SEO analysis.
 
 # Setup
-
+There should be no setup needed. Simply run the .NET application in Rider or VS and it should run npm install (if running for the first time) and serve the backend automatically.
+In the case that this does not happen:
 1. Navigate to **info-track-task/InfoScrape/InfoScrape/Web** and run **npm install**
-2. Run the .NET backend, it should automatically serve the frontend if angular is installed.
-3. If the frontend is not served, navigate to the web folder and run **ng serve**
+2. While still in the web folder, run **ng serve**
 
 # Architecture
 
